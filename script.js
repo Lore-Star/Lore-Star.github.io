@@ -28,3 +28,14 @@
   });
   update();
 })();
+
+const audio = new Audio("sounds/peluche.mp3");
+const buttons = document.querySelectorAll(".polemisbtn");
+
+buttons.forEach(polemisbtn => {
+  polemisbtn.addEventListener("click", () => {
+    audio.play();
+  });
+});
+
+
