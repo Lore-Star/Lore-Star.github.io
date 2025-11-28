@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>TIM ADVENTURE</title>
+</head>
+
+<!-- Encabezado -->
+    <header>
+        <div class="title">
+            <img src="images/Titulohtml.png" alt="Titulo" style=" width: 100%; height: auto; max-width: 350px; display: block;">
+            <img src="images/los4pelotudos.png" alt="4" style=" width: 100%; height: auto; max-width: 550px; display: block;">
+        </div>
+    </header>
+
+<!-- Principal -->
+    <body>
+        <main>
+            <div class="botones-menu" style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+                <a href="personajes.html"><button> <img src="images/charicon.png">Personajes</button></a>
+                <a href="datos.html"><button> <img src="images/docicon.png">Datos</button></a>
+            </div>
+        </main>
+
+<!-- Leyenda -->
+        <div style="background: #cfeafc; padding: 20px; border-radius: 1px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 600px; margin: 20px auto;">
+            <p>Sé espectador de la desventura sin consetimiento de Tim y sus amigos. No te preocupes, no es una obra maestra, pero está hecho en RPG Maker.</p>
+            <p>Hay destinos peores que la muerte, supongo.</p>
+            <div class="carousel" aria-label="Capturas del juego">
+                <div class="carousel-track">
+                    <img src="images/Screenshots/1.png" alt="Captura 1">
+                    <img src="images/Screenshots/2.png" alt="Captura 2">
+                    <img src="images/Screenshots/3.png" alt="Captura 3">
+                </div>
+                <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                <div class="carousel-dots">
+                    <button aria-label="Ir a 1" data-index="0" class="active"></button>
+                    <button aria-label="Ir a 2" data-index="1"></button>
+                    <button aria-label="Ir a 3" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<!-- Pie -->
+<img src="images/polemis.png" alt="Polemis" style=" width: 100%; height: auto; max-width: 280px; display: block; margin-top: 110px; margin-right: 60px;">
+<footer>
+    <p style="text-align: center; font-size: 14px; color: #888; margin: 20px 0;">2025, TIM ADVENTURE</p>
+</footer>
+
+</html>

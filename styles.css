@@ -1,0 +1,434 @@
+
+@font-face {
+    font-family: 'nokiafc22';
+    src:url("/font/nokiafc22.ttf");
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #2b2b2b;
+        color: #222;
+    }
+
+    .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+    }
+}
+
+
+header {
+    background: #3498db;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0.2rem;
+    background: #cfeafc;
+    border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+footer {
+    background: #222;
+    color: #2b2b2b;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+h1{
+    font-family: "nokiafc22", Arial, sans-serif;
+    color: #dd1530;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+}
+
+img {
+    image-rendering: pixelated;
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-family: "nokiafc22", Arial, sans-serif;
+    color: #282828;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+.itchbutton {
+    background: #fa5c5c;
+    color: #cfeafc;
+}
+
+.itchbutton:hover {
+    color: #282828;
+    background: #cfeafc;
+}
+
+button {
+    font-family: 'nokiafc22', Arial, sans-serif;
+    background: #3498db;
+    color: #cfeafc;
+    border: none;
+    border-radius: 1px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transition: background 0.2s, transform 0.2s, color 0.2s;
+}
+
+button:hover {
+    color: #282828;
+    background: #cfeafc;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Advertencia */
+.warning {
+    background: #fabcc0;
+    color: #b40000;
+    border-left: 7px solid #d7303e;
+    padding: 9px 16px;
+    margin: 20px auto 10px auto;
+    max-width: 500px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Buscador */
+.buscador {
+    display: block;
+    margin: 30px auto 20px auto;
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    width: 90%;
+    max-width: 400px;
+    font-family: 'nokiafc22', Arial, sans-serif;
+}
+
+/* Sección de otros */
+.lista-otros {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.otros-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'nokiafc22', Arial, sans-serif;
+}
+
+.otros-nombre {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3498db;
+}
+
+.otros-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.otros-extra {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Sección de armas */
+.lista-armas {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.arma-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'nokiafc22', Arial, sans-serif;
+}
+
+.arma-nombre {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3498db;
+}
+
+.arma-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.arma-extra {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Sección de Enemigos */
+.lista-enemigos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.enemigo-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'nokiafc22', Arial, sans-serif;
+}
+
+.enemigo-nombre {  
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3498db;
+}
+
+.enemigo-desc {
+    font-size: 1rem;
+}
+
+.enemigo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.enemigo-extra {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.enemigo-drops {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Página de personajes */
+.personajes-main {
+    background: transparent;
+    box-shadow: none;
+}
+
+#personajes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Tim */
+.tim-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    width: 48%;
+}
+
+.tim-card p {
+    text-align: left;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.tim-card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.tim-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Polemis */
+.polemis-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    width: 48%;
+}
+
+.polemis-card h1 {
+    color: #3f1d55;
+}
+
+.polemis-card p {
+    text-align: left;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.polemis-card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.polemis-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Timmy */
+.timmy-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    width: 48%;
+}
+
+.timmy-card h1 {
+    color: #1545c7;
+}
+
+.timmy-card p {
+    text-align: left;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.timmy-card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.timmy-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Gus */
+.gus-card {
+    background: #cfeafc;
+    border-radius: 1px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    width: 48%;
+}
+
+.gus-card h1 {
+    color: #a726a7;
+}
+
+.gus-card p {
+    text-align: left;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.gus-card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.gus-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 16px auto 0 auto;
+    border-radius: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #cfeafc;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.35s ease;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #3498db;
+    color: #cfeafc;
+    border: none;
+    border-radius: 1px;
+    padding: 8px 12px;
+    font-family: 'nokiafc22', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.carousel-btn:hover {
+    color: #282828;
+    background: #cfeafc;
+}
+
+.carousel-btn.prev { left: 8px; }
+.carousel-btn.next { right: 8px; }
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.carousel-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 2%;
+    background: #3498db;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-dots button.active {
+    opacity: 1;
+    background: #dd1530;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TIM ADVENTURE</title>
+</head>
+
+<!-- Encabezado -->
+<header>
+    <img src="images/Titulohtml.png" alt="Titulo">
+</header>
+
+<!-- Volver -->
+<body>
+    <div style=" display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+        <a href="datos.html"> <button>Volver</button></a>
+    </div>
+
+    <!-- Buscador -->
+    <input type="text" id="buscador" class="buscador" placeholder="Guantes...">
+
+    <!-- Lista -->
+    <div class="lista-armas" id="listaArmas">
+        <div class="arma-card" data-nombre="Guantes con Mocos">
+            <img src="images/armas/Guantes con Mocos.png" style="width: 100px; height: 80px;">
+            <span class="arma-nombre">Guantes con Mocos</span>
+            <div class="arma-stats">
+                ATQ: +3 | DEF: +2 | ATQ M: 0 | DEF M: 0 | AGI: +1
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: 0% | PRECISION: 0%
+                <br>
+                ELEMENTO: FISICO <img src="images/Fisico.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+        <div class="arma-card" data-nombre="Espada de Polemis">
+            <img src="images/armas/Espada de Polemis.png" style="width: 100px; height: 110px;">
+            <span class="arma-nombre">Espada de Polemis</span>
+            <div class="arma-stats">
+                ATQ: +2 | DEF: 0 | ATQ M: 0 | DEF M: 0 | AGI: -1
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: 0% | PRECISION: 0%
+                <br>
+                ELEMENTO: FISICO <img src="images/Fisico.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+        <div class="arma-card" data-nombre="Uñas de Plasha">
+            <img src="images/armas/Uñas de Plasha.png" style="width: 100px; height: 100px;">
+            <span class="arma-nombre">Uñas de Plasha</span>
+            <div class="arma-stats">
+                ATQ: +10 | DEF: 0 | ATQ M: -5 | DEF M: -6 | AGI: 0
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: +6% | PRECISION: 0%
+                <br>
+                ELEMENTO: FISICO <img src="images/Fisico.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+        <div class="arma-card" data-nombre="Espada Trueno">
+            <img src="images/armas/Espada Trueno.png" style="width: 100px; height: 100px;">
+            <span class="arma-nombre">Espada Trueno</span>
+            <div class="arma-stats">
+                ATQ: +7 | DEF: 0 | ATQ M: +5 | DEF M: 0 | AGI: -2
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: 0% | PRECISION: -5%
+                <br>
+                PARALISIS: 30%
+                <br>
+                ELEMENTO: RAYO <img src="images/Rayo.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+        <div class="arma-card" data-nombre="Orbe Oscuro">
+            <img src="images/armas/Orbe Oscuro.png" style="width: 100px; height: 108px;">
+            <span class="arma-nombre">Orbe Oscuro</span>
+            <div class="arma-stats">
+                ATQ: -8 | DEF: 0 | ATQ M: +14 | DEF M: -5 <br> | AGI: +2
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: 0% | PRECISION: 0%
+                <br>
+                CONTRAATAQUES: 10%
+                <br>
+                ELEMENTO: SOMBRA <img src="images/Sombra.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+        <div class="arma-card" data-nombre="Espada Sónica">
+            <img src="images/armas/Espada Sonica.png" style="width: 35px; height: 100px;">
+            <span class="arma-nombre">Espada Sónica</span>
+            <div class="arma-stats">
+                ATQ: +17 | DEF: 0 | ATQ M: -5 | DEF M: +3 <br> | AGI: +4
+            </div>
+            <div class="arma-extra">
+                EVASION: 0% | CRITICO: 0% | PRECISION: 0%
+                <br>
+                ELEMENTO: SONIDO <img src="images/Sonido.png" style="width: 10%; height: 10%;">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script>
+        const buscador = document.getElementById('buscador');
+        const armas = document.querySelectorAll('.arma-card');
+
+        buscador.addEventListener('input', function() {
+            const filtro = this.value.toLowerCase();
+            armas.forEach(card => {
+                const nombre = card.getAttribute('data-nombre').toLowerCase();
+                if (nombre.includes(filtro)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
